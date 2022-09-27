@@ -1,97 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- head-->   
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagen/logo.jpg" type="image/x-icon">
-    <title>contacto</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--logo head-->
+  <link rel="shortcut icon" href="imagen/index/logo.jpg" type="image/x-icon">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <!--hoja de estilos-->
+  <link rel="stylesheet" href="style.css" >
+  <!--animate.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
+  
+  <title>Pipspottery</title>
 </head>
+<!-- fin head-->
 <body>
-    <header class="header">
-        <img class="header__logo" src="imagen/logo.jpg" alt="logo" ">
-        <h3 class=header__titulo>Pipspottery</h3> 
-        <nav>
-           <ul class="header__lista">
-               <li><a href="index.html">inicio </a></li>
-               <li>|</li>
-               <li><a  href="sobrenosotros.html">sobre nosotros </a></li>
-               <li>|</li>
-               <li><a href="cursos.html">cursos </a></li>
-               <li>|</li>
-               <li><a href="galeria.html">galeria </a></li>
-               <li>|</li>
-               <li><a href="contacto.html">contacto </a></li>
-               <li>|</li>
-               <li><a href="https://www.instagram.com/?hl=es-la"><img src="imagen/instagram.png" alt="instagram" width="20px"></a></li>
-           </ul>
-        </nav>
-               
-   
-           
-       </header>
+   <!--header-->
+   <nav class="navbar navbar-expand-lg " width="100%">
+    <div class="container-fluid">
+      <img class="navbar-brand header__logo" src="imagen/iconos/logo1.jpeg" alt="logo"  width="4%">
+      <a class="navbar-brand" href="#">Pipspottery
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
+       
+          <a class="nav-link" href="sobrenosotros.html">sobrenosotros</a>
+        
+          <a class="nav-link" href="cursos.html">cursos</a>
+          
+          <a class="nav-link" href="galeria.html">galeria</a>
+          
+          <a class="nav-link" href="contacto.html">contacto</a>
+          <a  class="nav-link"href="https://www.instagram.com/?hl=es-la"><img src="imagen/iconos/instagram.png" alt="instagram" width="20px"></a>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- fin header-->
+  <!--main-->
      <main>
-        <h2>Contacto</h2>
-        <section class="section__contacto"> 
+       <section class="section__contacto" > 
          <div class="div__contacto">
-            <img src="imagen/ubicacion.png" alt="ubicacion" width="20px">
+            <h4>Contacto</h4> 
+            <img src="imagen/iconos/ubicacion.png" alt="ubicacion" width="20px">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptates! Architecto neque assumenda nihil hic laudantium consectetur suscipit ullam atque veritatis, quo quae? Illo, amet! Sit dolorum vel optio perferendis.</p>
-            <img src="imagen/gmail.png" alt="ubicacion" width="20px">
+            <img src="imagen/iconos/gmail.png" alt="ubicacion" width="20px">
             <p>mirandapia19@gmail.com</p>
-            <img src="imagen/telefono.png" alt="ubicacion" width="20px">
+            <img src="imagen/iconos/telefono.png" alt="ubicacion" width="20px">
             <p>+54-261664407</p>
          </div>
-      
-          
-             <h2 class="h2__contactos">Envianos un mensaje</h2>
-           
-             <form>
-               <input type="text" value="your name" required>
-               <input type="email" value="your gmail"required>
-               <br>
-               <input type="text" value="submit" required>
-               <br>
-               <input type="text" value="message"required>
-               <br>
-               <input type="submit">
-           
-           </form>
-       
-        </section>
         
+         <div class="div__mensaje ">
+             <h4>Envianos un mensaje</h4>
+             <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@gmail.com">
+             </div>
+             <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                <button type="button" class="btn btn-light">enviar</button>
+             </div>
+          </div>
+        </section>
      </main>
-     <footer>
-      <img src="imagen/logo.jpg" alt="logo" width="20px" height="20px" class="footer__logo">
-      <h3 class="footer__logo">Pipspottery</h3> 
-      <section class="footer__section">
-        <div class="footer__div">
-          <div class="footer__div--logo">
-              <h5>Detalles</h5>
-              <p>Taller de arte Argentina Mendoza, aprende pintura,dibujo y ceramica en todos los niveles </p>
-              <a href="https://www.argentina.gob.ar/normativa/aviso-legal"> Aviso legal</a>
-           </div>
-          <div class="footer__div--contacto">
-              <h5>Contacto</h5>
-              <p>mirandapia19@gmail.com</p>
-              <p>Paraguay 1740, M5547 Godoy Cruz, Mendoza</p>
-              <p>+54-261664407</p>
+     <!--footer-->
+    <footer>
+      <div class="footer__logo">
+        <img class="navbar-brand header__logo" src="imagen/iconos/logo1.jpeg" alt="logo"  height="12%" width="12%">
+        <h5>  Pipspottery</h5> 
+     </div>
+     <section class="footer__section">
+       <div class="footer__div">
+         <div class="footer__div--logo">
+             <h6>Detalles</h6>
+             <p>Taller de arte Argentina Mendoza, aprende pintura,dibujo y ceramica en todos los niveles </p>
+             <a href="https://www.argentina.gob.ar/normativa/aviso-legal"> Aviso legal</a>
           </div>
-          <div class="footer__div--seguinos">
-               <h5>Seguinos en</h5>
-               <a href="https://www.instagram.com/pipspottery19/?hl=es-la"><img src="imagen/instagram.png" alt="instagram" width="20px"></a>
-               <a href="https://www.facebook.com/"><img src="imagen/facebook.png" alt="facebook" width="20px"></a>
-               <a href="https://ar.linkedin.com/"><img src="imagen/linkedin.png" alt="linkelin" width="20px"></a>
-          </div>
+         <div class="footer__div--contacto">
+             <h6>Contacto</h6>
+             <p>mirandapia19@gmail.com</p>
+             <p>Paraguay 1740, M5547 Godoy Cruz, Mendoza</p>
+             <p>+54-261664407</p>
+         </div>
+         <div class="footer__div--seguinos">
+              <h6>Seguinos en</h6>
+              <a href="https://www.instagram.com/pipspottery19/?hl=es-la"><img src="imagen/iconos/instagram.png" alt="instagram" width="20px"></a>
+              <a href="https://www.facebook.com/"><img src="imagen/iconos/facebook.png" alt="facebook" width="20px"></a>
+              <a href="https://ar.linkedin.com/"><img src="imagen/iconos/linkedin.png" alt="linkelin" width="20px"></a>
+         </div>
        </div>
      </section>
-     <section class="footer__div--copyright">
-      <br>
-      <img src="imagen/copyright.png" alt="copyright" width="10px" height="10px">
-      <h6>Pipspottery</h6>
+     <section class="footer__section--copyright">
+       <div class="footer__div--copyright">
+         <img class="imagen__copyright" src="imagen/iconos/copyright.png" alt="copyright" width="10px">
+         <h6 class="imagen__copyright">Pipspottery</h6>
+       </div>
      </section>
-  
-      </footer>
-    
+   </footer>
+   <!--fin footer-->
 </body>
 </html>

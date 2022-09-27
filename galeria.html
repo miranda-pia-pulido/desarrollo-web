@@ -1,134 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- head-->   
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagen/logo.jpg" type="image/x-icon">
-    <title>galeria</title>
-</head>
-<body>
-    <header class="header">
-        <img class="header__logo" src="imagen/logo.jpg" alt="logo" ">
-        <h3 class=header__titulo>Pipspottery</h3> 
-        <nav>
-           <ul class="header__lista">
-               <li><a href="index.html">inicio </a></li>
-               <li>|</li>
-               <li><a  href="sobrenosotros.html">sobre nosotros </a></li>
-               <li>|</li>
-               <li><a href="cursos.html">cursos </a></li>
-               <li>|</li>
-               <li><a href="galeria.html">galeria </a></li>
-               <li>|</li>
-               <li><a href="contacto.html">contacto </a></li>
-               <li>|</li>
-               <li><a href="https://www.instagram.com/?hl=es-la"><img src="imagen/instagram.png" alt="instagram" width="20px"></a></li>
-           </ul>
-        </nav>
-               
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--logo head-->
+    <link rel="shortcut icon" href="imagen/index/logo.jpg" type="image/x-icon">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!--hoja de estilos-->
+    <link rel="stylesheet" href="style.css" >
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
    
-           
-       </header>
+    
+    <title>Pipspottery</title>
+</head>
+ <!-- fin head-->
+<body>
+   <!--header-->
+   <nav class="navbar navbar-expand-lg " width="100%">
+    <div class="container-fluid">
+      <img class="navbar-brand header__logo" src="imagen/iconos/logo1.jpeg" alt="logo"  width="4%">
+      <a class="navbar-brand" href="#">Pipspottery
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="index.html" aria-current="page" >inicio</a>
+       
+          <a class="nav-link" href="sobrenosotros.html">sobrenosotros</a>
+        
+          <a class="nav-link" href="cursos.html">cursos</a>
+          
+          <a class="nav-link" href="galeria.html">galeria</a>
+          
+          <a class="nav-link" href="contacto.html">contacto</a>
+          <a  class="nav-link"href="https://www.instagram.com/?hl=es-la"><img src="imagen/iconos/instagram.png" alt="instagram" width="20px"></a>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- fin header-->
 
    <main>
-      <section class="section__galeria">
-       <img src="imagen/galeria0.jpg" alt="galeria" width="100%">
-       <h2 class="h2__galeria">Galeria de alumnos </h2>
-      </section>
+      <div class="div__galeria--titulo ">
+        <h2 class="h2__galeria animate__animated animate__jackInTheBox animate__slow animate__backInDown ">Galeria de alumnos </h2>
+      </div>
       <!--galeria imagenes-->
       <section class="section__padre1">
          <section class="section__galeria--imagenes">
            <div class="div__galeria">
-               <img src="imagen/galeria1.jpg" alt="cuadro1" width="200px"height="300px">
+               <img src="imagen/galeria/galeria1.jpg" class=" galeria__imagen imagen__padding"  alt="cuadro1" >
                <p>"Gonzalo Martinez 2021"</p>
            </div>
            <div class="div__galeria">
-               <img src="imagen/galeria2.jpg" alt="cuadro2"width="200px"height="300px">
+               <img src="imagen/galeria/galeria2.jpg"  class=" imagen__padding" alt="cuadro2"width="200px"height="300px">
                <p>"Gonzalo Martinez 2021"</p>
            </div>
             <div class="div__galeria">
-               <img src="imagen/galeria3.jpg" alt="cuadro3" width="200px"height="300px">
+               <img src="imagen/galeria/galeria3.jpg"  class=" imagen__padding" alt="cuadro3" width="200px"height="300px">
                <p>"Gonzalo Martinez 2021"</p>
             </div>
-           <div class="div__galeria">
-               <img src="imagen/galeria4.jpg" alt="cuadro4" width="200px"height="300px">
+            <div class="div__galeria">
+               <img src="imagen/galeria/galeria4.jpg"  class=" imagen__padding"  alt="cuadro4" width="200px"height="300px">
                <p>"Gonzalo Martinez 2021"</p>
-           </div>
-           <div class="div__galeria">
-               <img src="imagen/galeria5.jpg" alt="cuadro5" width="200px"height="300px">
+            </div>
+            <div class="div__galeria">
+               <img src="imagen/galeria/galeria5.jpg"  class=" imagen__padding"  alt="cuadro5" width="200px"height="300px">
                <p>"Gonzalo Martinez 2021"</p>
-           </div>
-        <div class="div__galeria">
-            <img src="imagen/galeria6.jpg" alt="cuadro6" width="200px"height="300px">
-            <p>"Gonzalo Martinez 2021"</p>
-        </div>
-        <div class="div__galeria">
-            <img src="imagen/galeria7.jpg" alt="cuadro7" width="200px"height="300px">
-            <p>"Gonzalo Martinez 2021"</p>
-        </div>
-        <div class="div__galeria">
-            <img src="imagen/galeria8.jpg" alt="cuadro8" width="200px"height="300px">
-            <p>"Gonzalo Martinez 2021"</p>
-        </div>
-        <div class="div__galeria">
-            <img src="imagen/galeria9.jpg" alt="cuadro9"width="200px"height="300px">
-            <p>"Gonzalo Martinez 2021"</p>
-        </div>
-        <div class="div__galeria">
-            <img src="imagen/galeria10.jpg" alt="cuadro10" width="200px"height="300px">
-            <p>"Gonzalo Martinez 2021"</p>
-        </div>
-        <div class="div__galeria">
-            <img src="imagen/galeria11.jpg" alt="cuadro11" width="200px"height="300px">
-            <p>"Gonzalo Martinez 2021"</p>
-        </div>
-        <div class="div__galeria">
-            <img src="imagen/galeria12.jpg" alt="cuadro12" width="200px"height="300px">
-            <p>"Gonzalo Martinez 2021"</p>
-            
-        </div>
-      </section>
-    </section>
+            </div>
+            <div class="div__galeria">
+              <img src="imagen/galeria/galeria6.jpg" class=" imagen__padding"  alt="cuadro6" width="200px"height="300px">
+              <p>"Gonzalo Martinez 2021"</p>
+            </div>
+            <div class="div__galeria">
+              <img src="imagen/galeria/galeria7.jpg" class=" imagen__padding"  alt="cuadro7" width="200px"height="300px">
+              <p>"Gonzalo Martinez 2021"</p>
+            </div>
+            <div class="div__galeria">
+              <img src="imagen/galeria/galeria8.jpg" class=" imagen__padding"   alt="cuadro8" width="200px"height="300px">
+              <p>"Gonzalo Martinez 2021"</p>
+            </div>
+            <div class="div__galeria">
+              <img src="imagen/galeria/galeria9.jpg" class=" imagen__padding"  alt="cuadro9"width="200px"height="300px">
+              <p>"Gonzalo Martinez 2021"</p>
+            </div>
+            <div class="div__galeria">
+              <img src="imagen/galeria/galeria10.jpg" class=" imagen__padding" alt="cuadro10" width="200px"height="300px">
+              <p>"Gonzalo Martinez 2021"</p>
+            </div>
+            <div class="div__galeria">
+              <img src="imagen/galeria/galeria11.jpg" class=" imagen__padding"  alt="cuadro11" width="200px"height="300px">
+              <p>"Gonzalo Martinez 2021"</p>
+            </div>
+            <div class="div__galeria">
+              <img src="imagen/galeria/galeria12.jpg"  class=" imagen__padding"  alt="cuadro12" width="200px"height="300px">
+              <p>"Gonzalo Martinez 2021"</p>
+            </div>
+         </section>
+       </section>
     <!--fin galeria imagenes-->
    </main>
    
+   <!--footer-->
    <footer>
-    <img src="imagen/logo.jpg" alt="logo" width="20px" height="20px" class="footer__logo">
-    <h3 class="footer__logo">Pipspottery</h3> 
-    <section class="footer__section">
-      <div class="footer__div">
+    <div class="footer__logo">
+      <img class="navbar-brand header__logo" src="imagen/iconos/logo1.jpeg" alt="logo"  height="12%" width="12%">
+      <h5>  Pipspottery</h5> 
+   </div>
+   <section class="footer__section">
+     <div class="footer__div">
         <div class="footer__div--logo">
-            <h5>Detalles</h5>
-            <p>Taller de arte Argentina Mendoza, aprende pintura,dibujo y ceramica en todos los niveles </p>
-            <a href="https://www.argentina.gob.ar/normativa/aviso-legal"> Aviso legal</a>
-         </div>
+           <h6>Detalles</h6>
+           <p>Taller de arte Argentina Mendoza, aprende pintura,dibujo y ceramica en todos los niveles </p>
+           <a href="https://www.argentina.gob.ar/normativa/aviso-legal"> Aviso legal</a>
+        </div>
         <div class="footer__div--contacto">
-            <h5>Contacto</h5>
-            <p>mirandapia19@gmail.com</p>
-            <p>Paraguay 1740, M5547 Godoy Cruz, Mendoza</p>
-            <p>+54-261664407</p>
-        </div>
-        <div class="footer__div--seguinos">
-             <h5>Seguinos en</h5>
-             <a href="https://www.instagram.com/pipspottery19/?hl=es-la"><img src="imagen/instagram.png" alt="instagram" width="20px"></a>
-             <a href="https://www.facebook.com/"><img src="imagen/facebook.png" alt="facebook" width="20px"></a>
-             <a href="https://ar.linkedin.com/"><img src="imagen/linkedin.png" alt="linkelin" width="20px"></a>
-        </div>
-     </div>
+           <h6>Contacto</h6>
+           <p>mirandapia19@gmail.com</p>
+           <p>Paraguay 1740, M5547 Godoy Cruz, Mendoza</p>
+           <p>+54-261664407</p>
+         </div>
+         <div class="footer__div--seguinos">
+            <h6>Seguinos en</h6>
+            <a href="https://www.instagram.com/pipspottery19/?hl=es-la"><img src="imagen/iconos/instagram.png" alt="instagram" width="20px"></a>
+            <a href="https://www.facebook.com/"><img src="imagen/iconos/facebook.png" alt="facebook" width="20px"></a>
+            <a href="https://ar.linkedin.com/"><img src="imagen/iconos/linkedin.png" alt="linkelin" width="20px"></a>
+         </div>
+      </div>
    </section>
-   <section class="footer__div--copyright">
-    <br>
-    <img src="imagen/copyright.png" alt="copyright" width="10px" height="10px">
-    <h6>Pipspottery</h6>
-   </section>
-
-
-
-  </footer>
-
-
-    
+  <section class="footer__section--copyright">
+   <div class="footer__div--copyright">
+     <img class="imagen__copyright" src="imagen/iconos/copyright.png" alt="copyright" width="10px">
+     <h6 class="imagen__copyright">Pipspottery</h6>
+    </div>
+  </section>
+</footer>
+ <!--fin footer-->
 </body>
 </html>

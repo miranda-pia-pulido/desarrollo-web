@@ -1,0 +1,36 @@
+/* /*google fonts* */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans&family=Playfair+Display:wght@500&family=Poppins:wght@300&display=swap');
+
+
+ /*tipo de letra*/
+body{
+    font-family:  'Poppins', sans-serif;
+    font-weight: 300 ;
+    margin: 0;
+    padding: 0;
+}
+.imagen__padding{
+    margin-bottom:10px ;
+  }
+  .imagen__border{
+    border-radius: 50%;
+  }
+  @media only screen and (max-width:480px){
+
+    p {
+        flex-direction: column;
+        font-size: 11px;
+        
+        
+    }
+    li{
+        font-size: 11px;
+        flex-direction: column;
+    }
+    h2{
+        font-size: 13px;
+        flex-direction: column;
+    }
+  }
+    
+

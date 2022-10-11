@@ -1,0 +1,39 @@
+@import '../base/listas';
+@import '../base/extend';
+@import '../base/variable';
+@import '../base/mixin';
+.section__contacto{
+    @include flex ( flex, space-around, none, none ); 
+    margin:30px ;
+    margin-bottom: 40px;
+    @media only screen and (max-width:905px ){
+        flex-wrap: wrap;
+
+    }
+    .div__contacto{
+        display: inline-block;
+        margin: 20px;
+        margin-right: 0px;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    
+
+.div__mensaje{
+    display: inline-block;
+    padding: 20px;
+    width: 90%;
+    margin: 20px;
+     margin-top: 20px;
+     margin-left: 0px;
+    background-image:nth($backgroundimage, 1 );
+    box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.27);
+    @extend %transition;
+
+   &:hover{
+        transform: $hover;
+        
+    }
+
+}
+}

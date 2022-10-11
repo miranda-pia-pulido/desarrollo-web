@@ -1,0 +1,166 @@
+
+
+@import'../base/mapas';
+@import '../base/listas';
+@import '../base/extend';
+@import '../base/variable';
+@import '../base/mixin';
+.section__nuestrahistoria{
+    display: flex;
+    background-color:white;
+    margin: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    
+    
+    @media only screen and (max-width:810px ){
+        @include flex ( flex, center, none, column ); 
+        
+
+    }
+
+    .div__nuestrahistoria{
+        display: inline-block;
+        padding-right: 30px;
+        .boton {
+            background-color: map-get($boton, bg-boton);
+            border: map-get($boton, border-botton);
+        }
+       
+        
+    }
+      
+    
+   
+}
+.div__imagen--nuestrahistoria{
+@media only screen and (max-width:810px ){
+
+    @include flex ( flex, center, none, column ); 
+        padding-top:40px ;
+}
+}
+
+.section__profes{
+    background-image: nth($backgroundimage, 2);
+    background-color: rgb(242, 242, 242);  
+    .div__titulo--profes{
+      @include flex (flex, center, start,column);
+        margin: 20px;
+        margin-bottom: 0%;
+        padding: 30px;
+       
+        
+        
+    }
+    .section__profesionales{
+        @include flex ( flex, space-evenly, none, row ); 
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 10px;
+        padding-top: 0%;
+        padding-bottom: 60px;
+        text-align: center;
+        @media only screen and (max-width:480px ){
+            @include flex ( flex, center, none, column ); 
+
+        }
+        @media only screen and (max-width:780px ){
+            @include flex ( flex, center, none, column ); 
+            width: fit-content;
+            align-items: center;
+
+        }
+
+        .div__profe1{
+            display: inline-block;
+            padding: 10px;
+            width: fit-content;
+            width: 25%;
+            @media only screen and (max-width:780px ){
+                width: 75%!important;
+               
+            }
+            
+           
+        }
+        .div__profe2{
+            display: inline-block;
+            padding: 10px;
+            width: 25%;
+            
+            @media only screen and (max-width:780px ){
+                width: 75%!important;
+               
+            }
+          
+           
+        }
+        .div__profe3{
+            display: inline-block;
+            padding: 10px;
+            width: 25%;
+           
+            @media only screen and (max-width:780px ){
+                width: 75%!important;
+               
+            }
+          
+        }
+       
+       
+        
+        
+       
+        
+    }
+}
+.section__ubicacion{
+    @include flex (flex, center, none,row);
+    margin: 30px;
+    padding: 20px;
+    @media only screen and (max-width:780px ){
+        @include flex ( flex, center, none, column ); 
+       margin: 5px;
+       padding: 10px;
+       
+    }
+
+    .div__ubicacion{
+        display: inline-block;
+        background-color: white;
+        margin: 20px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.27);
+        @extend %transition;
+        iframe{
+            width: 100%;
+            height: 50%;
+        }
+        &:hover{
+            transform: $hover;
+        }
+      
+    }
+    .div__pago{
+        display: inline-block;
+        margin: 20px;
+        padding: 30px;
+        width: fit-content;
+        border-radius: 10px;
+        box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.27);
+        @extend %transition;
+
+        &:hover{
+            transform: $hover2;
+        }
+        .div__tarjetas{
+            @media only screen and (max-width:880px ){
+                display: none;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+@import '../base/variable';
+.header__logo{
+    border-radius: 50%;
+}
+.header__titulo{
+    display: inline;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav{
+    background-color: $backgroundcolor;
+    div{
+    
+      a{
+        color: black;
+      &:hover{
+          color:#d3dee7 !important;
+          transition: 0.3s;
+        }
+      }
+    }
+}

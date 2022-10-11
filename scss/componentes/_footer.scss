@@ -1,0 +1,69 @@
+@import '../base/mixin';
+footer{
+    background-image: nth($backgroundimage, 4 );
+
+   .footer__logo{
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 20px;
+        h5{
+          margin-left: 10px;
+         }
+   }
+
+   .footer__section{
+      .footer__div{
+        @include flex ( flex, space-around, none, row ); 
+        flex-wrap: wrap;
+        margin: 20px;
+        margin-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+           @media only screen and (max-width:650px){
+           display: flex;
+           flex-direction: column;
+           } 
+
+
+           .footer__div--logo{
+              display: inline-block;
+             
+                .a__avisolegal{
+                  color: white;
+                 
+                  @media only screen and (max-width:650px){
+                    font-size: small;
+                  }
+                }
+
+              
+              
+
+              
+             
+              
+            }
+           .footer__div--logo,
+           .footer__div--contacto,
+           .footer__div--seguinos{
+              display: inline-block;
+              text-align: start;
+              margin: 20px
+            }
+
+       }
+
+   }
+   .footer__section--copyright{
+    @include flex ( flex, center, center, column ); 
+
+         .footer__div--copyright{
+          display: inline ;
+               .imagen__copyright{
+                 display: inline-block;
+                }
+        
+        }
+  
+    } 
+}

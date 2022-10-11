@@ -1,0 +1,76 @@
+@import '../base/listas';
+@import '../base/extend';
+@import '../base/variable';
+.div__carrusel{ 
+    position: absolute;
+    top: 35%;
+    font-size: x-large;
+    opacity: 0.8;
+    
+ 
+ .div__carrusel--titulo{
+     color: #5F6F94;
+     background-color: white;
+     padding-top: 30px;
+     padding-bottom: 20px;
+     font-weight: bold;
+   
+    }
+}
+.div__frase{
+    
+    background-color:#5F6F94 ;
+    padding: 40px;
+    margin: 20px;
+    margin-top: 60px ;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.27);
+
+   
+}
+.section__propuestas{
+    display: flex;
+    margin-bottom: 40px;
+    @media only screen and (max-width:810px){
+            flex-direction: column;
+        }
+
+    .div__propuestas{
+        display: inline-block;
+        padding: 40px;
+        margin: 20px;
+       background-color: white;
+       box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.27);
+       border-radius: 10px;
+       @extend %transition;
+    
+
+       @media only screen and (max-width:810px){
+         display: flex;
+         flex-direction: column;
+        } 
+       
+    
+     &:hover{
+        transform: $hover2;
+     }
+    
+    }
+    .div__herramientas{
+        display: inline-block;
+        padding: 30px;
+        margin: 20px;
+        background-image: nth($backgroundimage, 1 );
+        box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.27);
+        border-radius: 10px;
+        @extend %transition;
+
+        &:hover{
+            transform: $hover;
+        }
+
+    }
+    
+}

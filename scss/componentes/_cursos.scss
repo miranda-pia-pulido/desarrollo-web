@@ -1,0 +1,98 @@
+
+@import '../base/extend';
+@import '../base/variable';
+@import '../base/mixin';
+.section__cursos{
+    
+    padding:40px;
+    padding-top: 80px;
+    background-color: rgb(242, 242, 242);
+    .div__cursos{
+        display: flex;
+        @media only screen and (max-width:880px){
+            @include flex ( flex, center, none, column ); 
+            
+
+        }
+        .div__profesionales--cursos{
+            display: inline-block;
+            width: fit-content;
+           text-align: start;
+           margin-top: -10px;
+           .boton {
+            background-color: map-get($boton, bg-boton);
+            border: map-get($boton, border-botton );
+        }
+       
+          
+        }
+        .div__imagen--cursos{
+            @include flex ( flex, end , none, row );
+            margin-top: -10px;
+            @media only screen and (max-width:880px){
+                display: flex;
+                flex-direction: column;
+                padding-top:40px ;
+            }
+            
+            
+        }
+        
+     }
+    
+    
+}
+.section__cursos--imagenes{
+    display: flex;
+    @media only screen and (max-width:880px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+
+    }
+
+    .div__cursos--tipos{
+        display: inline-block;
+        text-align: center;
+        margin: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.27);
+        @extend %transition;
+
+        &:hover{
+            transform: $hover;
+        }
+
+    }
+}
+
+.section__niveles--padre{
+    padding:40px;
+
+    .h2__niveles{
+        margin: 20px;
+        margin-left: 80px;
+        margin-bottom: 0px;
+        
+    }
+    .section__niveles{
+        @include flex ( flex, space-around, none, row );
+        margin: 30px;
+        margin-bottom: 60px;
+           @media only screen and (max-width:880px){
+            display: flex;
+            flex-wrap: wrap ;
+           }
+
+        .div__niveles{
+            display: inline-block;
+            padding: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+           
+            
+        }
+    }
+        
+}

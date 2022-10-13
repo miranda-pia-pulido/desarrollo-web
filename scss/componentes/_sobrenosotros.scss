@@ -15,8 +15,6 @@
     
     @media only screen and (max-width:810px ){
         @include flex ( flex, center, none, column ); 
-        
-
     }
 
     .div__nuestrahistoria{
@@ -30,8 +28,6 @@
         
     }
       
-    
-   
 }
 .div__imagen--nuestrahistoria{
 @media only screen and (max-width:810px ){
@@ -50,8 +46,6 @@
         margin-bottom: 0%;
         padding: 30px;
        
-        
-        
     }
     .section__profesionales{
         @include flex ( flex, space-evenly, none, row ); 
@@ -109,11 +103,6 @@
           
         }
        
-       
-        
-        
-       
-        
     }
 }
 .section__ubicacion{

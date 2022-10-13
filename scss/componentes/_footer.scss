@@ -23,8 +23,6 @@ footer{
            display: flex;
            flex-direction: column;
            } 
-
-
            .footer__div--logo{
               display: inline-block;
              
@@ -34,15 +32,9 @@ footer{
                   @media only screen and (max-width:650px){
                     font-size: small;
                   }
+                
                 }
-
-              
-              
-
-              
-             
-              
-            }
+              }
            .footer__div--logo,
            .footer__div--contacto,
            .footer__div--seguinos{

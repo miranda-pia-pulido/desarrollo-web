@@ -11,8 +11,6 @@
         display: flex;
         @media only screen and (max-width:880px){
             @include flex ( flex, center, none, column ); 
-            
-
         }
         .div__profesionales--cursos{
             display: inline-block;
@@ -34,12 +32,8 @@
                 flex-direction: column;
                 padding-top:40px ;
             }
-            
-            
         }
-        
-     }
-    
+    }
     
 }
 .section__cursos--imagenes{
